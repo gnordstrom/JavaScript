@@ -50,6 +50,18 @@ var _ = { };
   // Like first, but for the last elements. If n is undefined, return just the
   // last element.
   _.last = function(array, n) {
+    var newArray = [];
+    var lastElement = array.length - 1;
+    if (!n) return array[lastElement]
+    else {
+      for (var i = 0; i < n; i++) {
+        if (!array[lastElement]) {
+          continue;
+        } else {
+          newArray.push(array[lastElement])
+        }
+      }
+    }
   };
 
   // Call iterator(value, key, collection) for each element of collection.

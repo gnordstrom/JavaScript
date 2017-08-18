@@ -10,7 +10,7 @@ var odds = [];
 function oddsAndEvens(nums) {
     for (var i = 0; i < nums.length; i++) {
         if (nums[i] % 2 === 0) {
-        evens.push(nums[i]);
+            evens.push(nums[i]);
         } else if (nums[i] % 2 !== 0) {
             odds.push(nums[i]);
         }
